@@ -1,36 +1,29 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Forma Landing Page
 
-## Getting Started
+Platform publikasi untuk **Forma** — perangkat lunak manajemen *Design System* untuk tim kreatif. Landing page ini dibangun menggunakan arsitektur modern web untuk mendemonstrasikan kapabilitas antarmuka Forma.
 
-First, run the development server:
+## Tech Stack
+- Framework: Next.js 14 (App Router)
+- Bahasa: TypeScript
+- Penataan Gaya: Tailwind CSS
+- Animasi: GSAP (GreenSock) & ScrollTrigger
+
+## Menjalankan Proyek Lokal
+
+Pastikan Anda memiliki [Node.js](https://nodejs.org/) terinstal sebelum memulai:
 
 ```bash
+# 1. Pasang semua dependensi
+npm install
+
+# 2. Jalankan server development lokal
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Buka [http://localhost:3000](http://localhost:3000) di peramban Anda untuk melihat situs.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Struktur Folder Utama
+- `src/app`: Konfigurasi *layout*, meta-data, *font*, dan gaya global Next.js
+- `src/components`: Komponen antarmuka mandiri (`Navbar`, `Button`, `Cursor`, dll.)
+- `src/sections`: Blok konten ukuran layar-penuh yang membentuk situs utama (`Hero`, `Pricing`, `Marquee`)
+- `src/hooks`: Logika khusus (*custom hooks*) untuk mengoptimalkan siklus animasi GSAP
